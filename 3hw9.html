@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        h1{
+            font-family: "Open Sans", sans-serif;
+            font-weight: normal;
+            text-align: center;
+            margin: 40px;
+        }
+
+        .full-block{
+            background-color: black;    
+            height: 425px;
+
+        }
+        h2{
+            font-family: "Open Sans", sans-serif;
+            font-weight: normal;
+            color: white;
+            text-align: center;
+            font-size: 40px;
+            border-top: solid white 2px;
+            border-bottom: solid white 2px;
+        }
+        p{
+            color: white;
+            font-size: 30px;
+            font-family: "Open Sans", sans-serif;
+            font-weight: normal;
+            text-align: center;
+            
+        }
+        .background-image{
+            position: absolute;
+            z-index: 1;
+          
+        }
+        .slide-text{
+            position: relative;
+            margin: 0 auto;
+            z-index: 2;
+            width: 50%;
+            padding-top: 5%;
+           
+        }
+        .content{
+          
+           position: relative;
+           margin: 0 auto;
+           width: 1200px;
+           height: 425px;
+        }
+
+        .prev-click,
+        .next-click {
+            position: absolute;
+            width: 35px;
+            height: 56px;           
+            top: 50%;
+            margin-top: -28px;
+            background: url('prev-next-sprite.png');          
+            z-index: 3;
+        }
+
+        .next-click {
+            right: 10px;
+            background-position: -35px 0;
+        }
+        .prev-click{
+            left: 10px;
+            background-position: 0 0;
+        }
+
+        ul{
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            list-style-type: none;
+            z-index: 4;
+            margin-left: -100px;
+        }
+        li{
+            display: inline-block;
+            height: 15px;
+            width: 15px;
+            margin: 5px;
+        }
+        a{
+            display: block;
+            height: 15px;
+            width: 15px;
+        }
+        .white-li{
+            background: white;
+        }
+        .orange-li{
+            background: orange;
+        }
+    </style>
+</head>
+<body>
+    <h1>Вёрстка загатовки для слайдера</h1>
+    <div class="full-block">
+        <div class="content">
+            <img src="./slider-img-01.jpg" alt="girls" class="background-image">
+            <div class="slide-text">
+                <h2>Комфортная одежда</h2>
+                <p>для всех видов спорта</p>
+            </div>
+            <a href="#" class="prev-click"></a>
+            <a href="#" class="next-click"></a>
+            <ul >
+                <li class="orange-li"><a href="#"></a></li>
+                <li class="white-li"><a href="#"></a></li>
+                <li class="white-li"><a href="#"></a></li>
+                <li class="white-li"><a href="#"></a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
